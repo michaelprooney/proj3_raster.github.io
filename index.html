@@ -31,6 +31,24 @@ body {
     transforms were gleaned from the <a href=https://population.un.org/dataportal/>United Nations Data Portal</a>. 
     </p>
 <!-- Chinese Population by Year -->
+
+    <div id="observablehq-earth-97e6d27e"></div>
+    <p>Credit: <a href="https://observablehq.com/d/5cdc862dfe002e14">Plot: Choropleth by Michael Rooney&#039;s Workspace</a></p>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/5cdc862dfe002e14.js?v=4";
+    new Runtime().module(define, name => {
+      if (name === "earth") return new Inspector(document.querySelector("#observablehq-earth-97e6d27e"));
+    });
+    </script>
+
+    <iframe width="100%" height="793.1875" frameborder="0"
+      src="https://observablehq.com/embed/5cdc862dfe002e14?cells=china_average_change"></iframe>
+
+    
+    
     <div id="observablehq-chinese_gdp-19648028"></div>
     <p>Credit: <a href="https://observablehq.com/d/688db500f64fb2ee">Ethnic Cleansing in Xinjiang Province by Michael Rooney&#039;s Workspace</a></p>
     
@@ -40,6 +58,19 @@ body {
     import define from "https://api.observablehq.com/d/688db500f64fb2ee.js?v=4";
     new Runtime().module(define, name => {
       if (name === "chinese_gdp") return new Inspector(document.querySelector("#observablehq-chinese_gdp-19648028"));
+      
+    });
+    </script>
+
+    <div id="observablehq-xinjiang_province_sites-e19c6772"></div>
+    <p>Credit: <a href="https://observablehq.com/d/688db500f64fb2ee">Ethnic Cleansing in Xinjiang Province by Michael Rooney&#039;s Workspace</a></p>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/688db500f64fb2ee.js?v=4";
+    new Runtime().module(define, name => {
+      if (name === "xinjiang_province_sites") return new Inspector(document.querySelector("#observablehq-xinjiang_province_sites-e19c6772"));
     });
     </script>
   </body>
