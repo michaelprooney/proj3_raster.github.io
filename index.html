@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  width: 640px;
+  margin: 40px auto 0 auto;
+}
+</style>
+    <title>Project 2: Chinese Population Data</title>
+  <body>
+    <h1>Does China's Past Population Give Us an Insight Into Their Future?</h1>
+    <h3>Visualizations created by Michael Rooney</h3>
+    <h4>Chinese population data exploration</h4>
+    <p>The Chinese Population has made its way to 1.4 billion in the year 2024. However, <a href=https://chinapower.csis.org/china-demographics-challenges/>many experts</a> are saying that China is in trouble due to their so called demographic bomb. In fact, since 2022 China's population has been decreasing after a steady period of
+    consistent growth. The shrinking population issue is worsened by the fact that the population is aging. These problems primarily stem from the one-child policy implemented in 1980 and different administrative divisions looking to adhere to the birth rates put out by the central government 
+    of the People's Republic of China. Other events which may have had an effect on both population and birth rates is <a href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1127087/>China's Great Famine</a> beginning in 1959 killing nearly 30 million Chinese citizens. Lastly, Chinese women are contributing to 
+    this demographic crisis as well because none of them want to leave their careers or pay the high child care costs. Unfortunately, in a country with very little history of paternity leave, those are the woman's two options.</p>
+
+    <p>
+      "Hong Kong’s Family Planning Association said in a separate release on Tuesday that the number of childless women in the special Chinese administrative region more than doubled from five years ago to 43.2% last year." [<a href=https://www.nbcnews.com/news/world/china-fertility-rate-record-low-rcna100353>Source</a>]
+    </p>
+    
+    <p>Through looking at population data and fertility rates, I believe these facts will be visualized and more easily understood. <b>My hypothesis is that the population of China is aging and fertility rates began dropping beginning with the Great Famine and 
+    continued to go down following the one-child policy in 1980. 
+      </b>
+    </p>
+    <p>
+    The geographic transoformations below display the data from a <a href=https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population#>Wikipedia</a> dataset. Additionally, the stacked bar chart and line graph below the geographic
+    transforms were gleaned from the <a href=https://population.un.org/dataportal/>United Nations Data Portal</a>. 
+    </p>
+<!-- Chinese Population by Year -->
+    <div id="observablehq-chinese_gdp-19648028"></div>
+    <p>Credit: <a href="https://observablehq.com/d/688db500f64fb2ee">Ethnic Cleansing in Xinjiang Province by Michael Rooney&#039;s Workspace</a></p>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/688db500f64fb2ee.js?v=4";
+    new Runtime().module(define, name => {
+      if (name === "chinese_gdp") return new Inspector(document.querySelector("#observablehq-chinese_gdp-19648028"));
+    });
+    </script>
+  </body>
+</html>
