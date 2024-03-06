@@ -30,10 +30,10 @@ body {
     The geographic transoformations below display the data from a <a href=https://en.wikipedia.org/wiki/List_of_Chinese_administrative_divisions_by_population#>Wikipedia</a> dataset. Additionally, the stacked bar chart and line graph below the geographic
     transforms were gleaned from the <a href=https://population.un.org/dataportal/>United Nations Data Portal</a>. 
     </p>
-<!-- Chinese Population by Year -->
+<!-- earth raster -->
 
     <div id="observablehq-earth-97e6d27e"></div>
-    <p>Credit: <a href="https://observablehq.com/d/5cdc862dfe002e14">Plot: Choropleth by Michael Rooney&#039;s Workspace</a></p>
+<!--     <p>Credit: <a href="https://observablehq.com/d/5cdc862dfe002e14">Plot: Choropleth by Michael Rooney&#039;s Workspace</a></p> -->
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
     <script type="module">
@@ -44,13 +44,24 @@ body {
     });
     </script>
 
-    <iframe width="100%" height="793.1875" frameborder="0"
-      src="https://observablehq.com/embed/5cdc862dfe002e14?cells=china_average_change"></iframe>
-
+<!-- chinese raster -->
     
+    <div id="observablehq-china_average_change-94fce63b"></div>
+<!--     <p>Credit: <a href="https://observablehq.com/d/5cdc862dfe002e14@877">Plot: Choropleth by Michael Rooney&#039;s Workspace</a></p> -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/5cdc862dfe002e14@877.js?v=4";
+    new Runtime().module(define, name => {
+      if (name === "china_average_change") return new Inspector(document.querySelector("#observablehq-china_average_change-94fce63b"));
+    });
+    </script>
+
+<!--     chinese gdp -->
     
     <div id="observablehq-chinese_gdp-19648028"></div>
-    <p>Credit: <a href="https://observablehq.com/d/688db500f64fb2ee">Ethnic Cleansing in Xinjiang Province by Michael Rooney&#039;s Workspace</a></p>
+<!--     <p>Credit: <a href="https://observablehq.com/d/688db500f64fb2ee">Ethnic Cleansing in Xinjiang Province by Michael Rooney&#039;s Workspace</a></p> -->
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
     <script type="module">
@@ -62,8 +73,10 @@ body {
     });
     </script>
 
+<!--     xinjiang province data overlay -->
+
     <div id="observablehq-xinjiang_province_sites-e19c6772"></div>
-    <p>Credit: <a href="https://observablehq.com/d/688db500f64fb2ee">Ethnic Cleansing in Xinjiang Province by Michael Rooney&#039;s Workspace</a></p>
+<!--     <p>Credit: <a href="https://observablehq.com/d/688db500f64fb2ee">Ethnic Cleansing in Xinjiang Province by Michael Rooney&#039;s Workspace</a></p> -->
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
     <script type="module">
